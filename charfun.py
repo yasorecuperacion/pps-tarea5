@@ -38,4 +38,4 @@ if __name__ == "__main__":
     else:
         print("La frase no es un palíndromo.")
 
-# Agrego comentario para crear un commit de prueba.
+# Pequeño cambio para probar Workflow de Github.
