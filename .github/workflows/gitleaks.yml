@@ -10,8 +10,12 @@ jobs:
 
     steps:
     - name: Comprueba repositorio
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
-    - name: Comprueba si hay fugas.
-      run:
-        gitleaks detect --source . -v
+    - name: Instalar Gitleaks
+      run: |
+        sudo apt-get update
+        sudo apt-get install gitleaks
+
+    - name: Comprueba si hay fugas
+      run: gitleaks detect --source . -v
