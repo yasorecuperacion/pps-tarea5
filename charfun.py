@@ -37,3 +37,5 @@ if __name__ == "__main__":
         print("La frase es un palíndromo.")
     else:
         print("La frase no es un palíndromo.")
+
+# Agrego comentario para crear un commit de prueba.
